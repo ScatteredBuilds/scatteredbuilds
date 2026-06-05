@@ -1,6 +1,8 @@
 # ScatteredBuilds
 
-I learn AI engineering by building small systems, testing them, documenting failures, and understanding why they behave the way they do.
+I build retrieval systems, tool-calling workflows, and interpretability learning projects focused on testing, evaluation, and verification.
+
+I learn AI engineering by building systems, documenting failures, and studying how they behave.
 
 Current focus areas:
 
