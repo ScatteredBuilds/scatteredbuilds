@@ -1,6 +1,6 @@
 # ScatteredBuilds
 
-I build retrieval systems, tool-calling workflows, and interpretability learning projects focused on testing, evaluation, and verification.
+I am learning AI engineering through small retrieval, tool-use, eval, and interpretability study projects.
 
 I learn AI engineering by building systems, documenting failures, and studying how they behave.
 
@@ -97,25 +97,6 @@ Known limitations:
 - Some model-specific claims are marked `TODO: VERIFY`.
 - The repository does not yet include reproducible code for inspecting a trained model.
 - The current artifacts are beginner-oriented learning materials.
-
-## ai-systems-lab
-
-[ai-systems-lab](https://github.com/ScatteredBuilds/ai-systems-lab) is an early scratchpad for smaller AI systems notes and experiments.
-
-What it contains:
-
-- Placeholder areas for Python foundations.
-- Transformer basics.
-- Retrieval experiments.
-- Evaluation design.
-- Inference notes.
-- Interpretability notebooks.
-
-Known limitations:
-
-- The repository is in early buildout.
-- Current evidence is mostly structure and direction.
-- It should not be treated as a finished project.
 
 # Current Focus
 
