@@ -1,121 +1,31 @@
 # ScatteredBuilds
 
-I am learning AI engineering through small retrieval, tool-use, eval, and interpretability study projects.
+I am moving toward AI evaluation and agent reliability engineering, building on enterprise experience in testing, release readiness, infrastructure validation, governance, and production systems.
 
-I learn AI engineering by building systems, documenting failures, and studying how they behave.
+My strongest current AI work is evaluation: designing small test sets, defining pass/fail criteria, automating checks, analyzing regressions, and iterating on prompts and data quality. I am also developing deeper independent Python and software engineering skills through small, inspectable projects.
 
-Current focus areas:
+## Current work
 
-- Retrieval systems
-- Evaluation
-- Tool calling
-- Validation
-- Logging
-- Transformer fundamentals
-- Mechanistic interpretability
+- [context-engine](https://github.com/ScatteredBuilds/context-engine) — local semantic retrieval with threshold-based refusal and documented retrieval evals.
+- [claude-tool-assistant](https://github.com/ScatteredBuilds/claude-tool-assistant) — a controlled tool-calling workflow with schema validation, logging, retry/fallback handling, and a small eval runner.
+- [interp-notebooks](https://github.com/ScatteredBuilds/interp-notebooks) — beginner study notes and toy experiments on transformer internals and mechanistic interpretability.
 
-# Current Projects
+## Focus
 
-## Context Engine
+- AI evaluation and regression testing
+- Agent and tool-use reliability
+- Testing, observability, and production readiness
+- Retrieval and AI systems fundamentals
+- Python and software engineering practice
+- Longer-term study of mechanistic interpretability
 
-[Context Engine](https://github.com/ScatteredBuilds/context-engine) is a local retrieval system for markdown notes.
+These repositories are learning projects, not claims of production-scale AI systems or interpretability expertise. I try to keep the evidence visible: runnable code, explicit checks, saved failures, and clearly stated limitations.
 
-What it does:
+## Working principles
 
-- Loads markdown notes recursively.
-- Splits notes into word-based chunks.
-- Embeds chunks with `sentence-transformers`.
-- Retrieves top-k chunks with cosine similarity.
-- Prints source filenames.
-- Refuses when the top retrieval score is below a threshold.
+- Define expected behavior before calling a result successful.
+- Preserve failures as evidence for the next iteration.
+- Separate small evaluation checks from benchmark claims.
+- Prefer reproducible artifacts over broad capability claims.
 
-What was tested:
-
-- The basic retrieval check set passed 3/3 documented checks.
-- The expanded retrieval check set passed 19/20 documented checks.
-- The expanded run documents one ambiguous-query failure where the expected source was not retrieved above threshold.
-
-Known limitations:
-
-- The current corpus uses one sample markdown note.
-- The system retrieves context but does not generate a final answer.
-- The confidence threshold is simple and not calibrated against a larger corpus.
-- Embeddings are recomputed on each run.
-- The evaluation checks retrieval behavior only, not answer quality.
-
-## Claude Tool Assistant
-
-[Claude Tool Assistant](https://github.com/ScatteredBuilds/claude-tool-assistant) is a command-line tool-calling assistant using Anthropic models and one local risk-classification tool.
-
-What it does:
-
-- Accepts a user request from the command line.
-- Calls Claude through the Anthropic API.
-- Exposes one local `classify_risk` tool.
-- Asks for structured JSON output.
-- Validates the final result with Pydantic.
-- Saves raw API responses.
-- Logs runs to JSONL.
-- Handles retries and model fallback.
-
-What was tested:
-
-- Runtime output is documented in `outputs/example_run.md`.
-- Model fallback behavior is documented in `outputs/model_fallback_example.md`.
-- The evaluation runner checks tool execution, schema validation, output structure, retry use, and failures.
-- The saved evaluation run passed 4/5 sample cases and documents one irrelevant-input failure.
-
-Known limitations:
-
-- The local tool uses keyword-based risk classification.
-- The assistant has one local tool.
-- The sample cases are not benchmark results.
-- A passing eval case means the structure and tool flow worked; it does not prove answer quality.
-- The current prompt and parser can fail on non-incident-style input.
-
-## Interp Notebooks
-
-[Interp Notebooks](https://github.com/ScatteredBuilds/interp-notebooks) contains learning notes, a notebook, and a small toy experiment focused on transformer internals.
-
-What it contains:
-
-- Notes on attention heads.
-- Notes on the residual stream.
-- A beginner notebook on attention-head intuition.
-- A toy attention-routing experiment with saved output.
-
-What it does not claim:
-
-- It does not claim interpretability expertise.
-- It does not claim research results.
-- It does not inspect real model activations yet.
-- It does not prove how a trained model behaves.
-
-Known limitations:
-
-- The current notebook and experiment use toy examples.
-- Some model-specific claims are marked `TODO: VERIFY`.
-- The repository does not yet include reproducible code for inspecting a trained model.
-- The current artifacts are beginner-oriented learning materials.
-
-# Current Focus
-
-- Retrieval evaluation
-- Tool calling
-- Observability
-- Reliability
-- Transformer internals
-
-# Principles
-
-- Test assumptions.
-- Document failures.
-- Verify behavior.
-- Prefer evidence over speculation.
-
-# Portfolio Links
-
-- [LinkedIn](https://www.linkedin.com/in/adamvaldezio)
-- [Context Engine](https://github.com/ScatteredBuilds/context-engine)
-- [Claude Tool Assistant](https://github.com/ScatteredBuilds/claude-tool-assistant)
-- [Interp Notebooks](https://github.com/ScatteredBuilds/interp-notebooks)
+[LinkedIn](https://www.linkedin.com/in/adamvaldezio)
