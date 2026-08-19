@@ -1,17 +1,17 @@
 # ScatteredBuilds
 
-I am moving toward AI evaluation and agent reliability engineering, building on enterprise experience in testing, release readiness, infrastructure validation, governance, and production systems.
+I am a technology operations engineer moving toward AI evaluation and agent reliability, building on enterprise experience in integration testing, system validation, incident investigation, operational support, and production reliability.
 
-My strongest current AI work is evaluation: designing small test sets, defining pass/fail criteria, automating checks, analyzing regressions, and iterating on prompts and data quality. I am also developing deeper independent Python and software engineering skills through small, inspectable projects.
+My public projects are small, inspectable learning builds focused on retrieval, tool use, structured outputs, evaluation, and reliability. They demonstrate how I approach engineering questions; they are not claims of professional AI-engineering experience or production-scale systems.
 
 ## Current work
 
-- [agent-eval-lab](https://github.com/ScatteredBuilds/agent-eval-lab) — active build. A trajectory evaluation harness for tool-using agents: hand-written trajectory fixtures, metrics for tool selection and loop detection, pytest coverage, then baseline-vs-candidate regression checks as a CI gate. Core code in this repo is written by hand; AI is used as tutor and reviewer, not author.
 - [context-engine](https://github.com/ScatteredBuilds/context-engine) — local semantic retrieval with threshold-based refusal and documented retrieval evals.
 - [claude-tool-assistant](https://github.com/ScatteredBuilds/claude-tool-assistant) — a controlled tool-calling workflow with schema validation, logging, retry/fallback handling, and a small eval runner.
 - [interp-notebooks](https://github.com/ScatteredBuilds/interp-notebooks) — beginner study notes and toy experiments on transformer internals and mechanistic interpretability.
+- `agent-eval-lab` — active private build exploring deterministic evaluation of tool-using agent trajectories. It will be added to the public portfolio after its implementation and evidence are ready for inspection.
 
-context-engine and claude-tool-assistant were built earlier in my learning with heavier AI assistance. They run and I can walk through them, but agent-eval-lab is where I am proving independent implementation.
+context-engine and claude-tool-assistant were built earlier in my learning with heavier AI assistance. I keep that context visible so repository polish is not mistaken for proof that I independently implemented or fully understand every detail.
 
 ## Focus
 
