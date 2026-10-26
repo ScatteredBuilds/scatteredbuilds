@@ -2,15 +2,11 @@
 
 My professional background is technology operations. I am moving into AI evaluation by learning how to build, test, observe, and evaluate AI-powered systems, with a focus on agent reliability.
 
-My public repositories are small, inspectable learning projects. They show how I approach engineering questions; they are not claims of professional AI-engineering experience, production scale, or complete independent mastery of every implementation.
+## Current work
 
-## Current public work
+- **agent-eval-lab**: a learning project for deterministic checks on how AI agents get to their answers. Restarting from scratch in October 2026.
 
-- [context-engine](https://github.com/ScatteredBuilds/context-engine) — local semantic retrieval for Markdown notes with threshold-based refusal and retrieval-only evaluation.
-- [claude-tool-assistant](https://github.com/ScatteredBuilds/claude-tool-assistant) — a tool-calling learning project with schema validation, logging, retry and fallback handling, and workflow-contract evals.
-- [interp-notebooks](https://github.com/ScatteredBuilds/interp-notebooks) — beginner interpretability study notes and toy experiments on transformer internals.
-
-`context-engine` and `claude-tool-assistant` were built earlier in my learning with heavier AI assistance. I keep that context visible so repository polish is not mistaken for proof that I independently implemented or fully understand every detail.
+My earlier learning projects were built with heavy AI assistance and are now private. I'm rebuilding from the fundamentals so that what's public here is work I can explain.
 
 ## What I am learning
 
