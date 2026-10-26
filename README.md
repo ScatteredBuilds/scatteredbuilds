@@ -1,6 +1,6 @@
 # ScatteredBuilds
 
-My professional background is technology operations. I am building toward AI systems and platform engineering by learning how to build, integrate, deploy, secure, observe, and evaluate AI-powered systems.
+My professional background is technology operations. I am moving into AI evaluation by learning how to build, test, observe, and evaluate AI-powered systems, with a focus on agent reliability.
 
 My public repositories are small, inspectable learning projects. They show how I approach engineering questions; they are not claims of professional AI-engineering experience, production scale, or complete independent mastery of every implementation.
 
